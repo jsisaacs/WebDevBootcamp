@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="https://www.wikipedia.org" method="post">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" placeholder="John" required>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" placeholder="Smith" required>
+      </div>
+      <div>
+        <label for="male">Male:</label>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="female">Female:</label>
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="other">Other:</label>
+        <input id="other" type="radio" name="gender" value="other">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="your email" required>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+      </div>
+      <div>
+        <label for="birthday">Birthday:</label>
+        <select name="month">
+          <option value="January">January</option>
+          <option value="February">February</option>
+        </select>
+        <select name="day">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select name="year">
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+        </select>
+      </div>
+      <div>
+        <label for="termsAndConditions">I agree to the terms and conditions</label>
+        <input id="termsAndConditions" type="checkbox">
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
